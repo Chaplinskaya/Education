@@ -7,6 +7,19 @@
   width: 100%;
   margin: 0 auto; }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px; } }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 700px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px; } }
+
 @font-face {
   font-family: 'Raleway Medium';
   src: url("../fonts/Raleway-Medium.eot");
@@ -59,66 +72,135 @@
 * {
   font-family: 'Open Sans Regular';
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+a {
+  outline: none;
+  text-decoration: none; }
 
 h1 {
   font-size: 70px;
+  line-height: 70px;
   color: #fff;
-  font-family: Raleway bold; }
+  font-family: Raleway bold;
+  padding-bottom: 40px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  font-size: 60px; }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px; } }
 
 p {
   font-size: 17px;
   color: #fff;
   font-family: Open Sans Semibold; }
 
-.navbar-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  max-height: 50px;
-  margin-top: 100px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+main p {
+  padding-bottom: 50px; }
 
-.navbar__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-left: 20%;
-  width: 23%; }
-  .navbar__menu a {
-    padding: 0px 25px;
-    outline: none;
-    text-decoration: none;
-    color: #fff; }
+.navbar {
+  padding-top: 50px; }
+  .navbar-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    max-height: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 20%; }
+    .navbar__menu a {
+      padding: 0px 25px;
+      text-decoration: none;
+      color: #fff; }
+  .navbar__logo {
+    display: block; }
+  .navbar__button {
+    display: block;
+    width: 120px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: #fc5657; }
 
-.navbar__logo {
-  display: block; }
-
-.navbar__button {
+.menu__button__line {
   display: block;
-  width: 120px;
-  height: 45px;
-  border-radius: 22px;
-  background-color: #fc5657; }
+  width: 20px;
+  height: 3px;
+  background-color: #fff; }
 
-body {
+.menu__button span {
+  margin-top: 5px; }
+
+.menu__button {
+  display: none; }
+
+.menu-wrap {
+  display: none; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar__menu {
+    margin-left: 5%; } }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .navbar__menu {
+    display: none; }
+  .menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .menu-wrap a {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color: #fff; }
+    .menu-wrap a:nth-child(1) {
+      margin-bottom: 10px;
+      margin-top: 80px; }
+  .menu__button {
+    display: block; } }
+
+.hero {
   background: url("../img/home-img.png") no-repeat;
   background-size: cover; }
 
 main {
   margin-top: 270px;
-  margin-bottom: 270px; }
+  padding-bottom: 270px; }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  main {
+    margin-top: 200px; } }
