@@ -90,9 +90,13 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   font-size: 60px; }
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 568px) and (max-width: 767px) {
   h1 {
     font-size: 40px; } }
+
+@media (min-width: 300px) and (max-width: 567px) {
+  h1 {
+    font-size: 32px; } }
 
 p {
   font-size: 17px;
@@ -101,6 +105,11 @@ p {
 
 main p {
   padding-bottom: 50px; }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  main p {
+    font-size: 14px;
+    width: 50%; } }
 
 .navbar {
   padding-top: 50px; }
@@ -189,13 +198,35 @@ main p {
       color: #fff; }
     .menu-wrap a:nth-child(1) {
       margin-bottom: 10px;
-      margin-top: 80px; }
+      margin-top: 40px; }
   .menu__button {
-    display: block; } }
+    display: block; }
+  .navbar__button {
+    width: 80px;
+    height: 35px;
+    border-radius: 16px; }
+  .navbar__logo img {
+    width: 80px;
+    height: auto; } }
 
 .hero {
   background: url("../img/home-img.png") no-repeat;
   background-size: cover; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    background-size: 250%;
+    background-position: top; } }
+
+@media (min-width: 567px) and (max-width: 767px) {
+  .hero {
+    background-size: 400%;
+    background-position: top; } }
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .hero {
+    background-size: 550%;
+    background-position: top; } }
 
 main {
   margin-top: 270px;
