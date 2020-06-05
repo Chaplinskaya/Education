@@ -1,17 +1,180 @@
 main
 	margin-top: 270px
 	padding-bottom: 270px
-	
-	&__title
+
+.main .navbar__button
+		display: block
+		width: 150px
+		height: 50px
+		border-radius: 25px
+		background-color: #fc5657
+		color: #fff
+		font-size: 18px
+
+p.main__title_text
+	font-size: 17px
+	line-height: 30px
+	color: #fff
+	padding-bottom: 50px
+	font-family: Open Sans Semibold
 
 .main__applyblue
-		width: 400px
-		height: 266px
-		background-color: #183251
-		border-radius: 10px
-		position: absolute
-		z-index: 1000
-		margin-top: 300px
+	width: 400px
+	height: 266px
+	background-color: #183251
+	border-radius: 10px
+	position: relative
+	z-index: 1000
+		
+.main__applyred
+	width: 400px
+	height: 266px
+	background-color: #ff5f60
+	border-radius: 10px
+	position: absolute
+	z-index: 2000
+	margin-top: 10px
+
+	h4
+		color: #fff
+		text-align: center
+		font-size: 30px
+		font-family: Poppins
+		font-weight: bold
+		padding-top: 55px
+		padding-bottom: 40px
+
+	p
+		color: #fff
+		text-align: center
+		font-size: 20px
+		font-family: Poppins Regular
+		opacity: 0.5
+
+	form
+		margin: 0 auto
+
+		.form__input
+			width: 240px
+			margin: 20px auto
+			display: block
+			position: relative
+		
+		input
+			width: 240px
+			height: 45px
+			border-radius: 22px
+			background-color: #fff
+		
+		.form__input:after
+			content: ""
+			display: block
+			width: 60px
+			height: 45px
+			background-color: #1f3148
+			border-radius: 0 22px 22px 0
+			float: right
+			margin-top: -45px
+			margin-left: 200px
+			position: absolute
+
+		.form__input:after:hover
+			opacity: 0.5
+
+.main__latest button,
+.main__university  button
+	width: 140px
+	height: 45px
+	border-radius: 22px
+
+.main__block
+	display: flex
+	justify-content: space-between
+	margin-top: 170px
+
+	&_text
+		width: 570px
+		padding-top: 150px
+
+		p
+			color: #222222
+			text-align: center
+			font-size: 18px
+			font-style: italic
+			line-height: 30px
+			
+		span
+			display: block
+			color: #fb8122
+			font-size: 16px
+			text-align: center
+			font-style: italic
+			line-height: 30px
+			font-family: 'Poppins Semibold'
+			
+
+	&_pagination
+		display: flex
+		width: 90px
+		margin: 0 auto
+
+	.pagination
+		width: 10px
+		height: 10px
+		border-radius: 5px
+		background-color: #fb8122
+		opacity: 0.5
+		margin-top: 20px
+
+	.pagination:not(:last-child)
+		margin-right: 10px
+
+	.pagination:hover
+		opacity: 1
+
+.main__middle_block
+	margin-top: 215px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.main__middle_item
+	text-align: center
+
+	p
+	padding: 20px 25px
+	font-size: 17px
+	line-height: 27px
+	color: #8c8c8c
+
+.main__middle_item:nth-child(1)
+	margin-right: 40px
+
+.main__middle_item:nth-child(3)
+	margin-left: 40px
+	
+.main__middle_circle:nth-child(1)
+	width: 130px
+	height: 130px
+	border-radius: 65px
+	margin: 0 auto
+	margin-bottom: 30px
+	background-color: rgb(75, 210, 255)
+	box-shadow: (0 0 50px rgb(75, 210, 255))
+
+.main__middle_item:nth-child(2) .main__middle_circle
+	background-color: rgb(105, 75, 255)
+	box-shadow: (0 0 50px rgb(105, 75, 255))
+
+.main__middle_item:nth-child(3) .main__middle_circle
+	background-color: rgb(255, 177, 75)
+	box-shadow: (0 0 50px rgb(255, 177, 75))
+
+.main__middle_circle img
+	padding-top: 30px
+
+.main__middle_item:nth-child(3) .main__middle_circle img
+	padding-top: 45px
 
 @media (min-width: 300px) and (max-width: 767px)
 	
@@ -19,3 +182,51 @@ main
 		margin-top: 200px
 		position: relative
 		z-index: 0
+
+	.main__block
+		flex-direction: column
+		margin-top: 350px
+
+		&_text
+			width: 100%
+			padding-top: 50px
+
+		.main__applyblue
+			width: 300px
+			height: 166px
+
+		.main__applyred
+			width: 300px
+			height: 166px
+
+		h4
+			font-size: 20px
+			padding-top: 25px
+			padding-bottom: 5px
+
+		p
+			font-size: 16px
+			padding-bottom: 10px
+
+	.main__applyred_button > button.main__button
+		margin: 5px auto
+
+	.main__middle_block
+		flex-direction: column
+
+	.main__middle_item:nth-child(1)
+		margin-right: 0px
+
+.main__middle_item:nth-child(3)
+		margin-left: 0px
+
+.main__middle_item p
+		color: #000
+
+@media (min-width: 768px) and (max-width: 1024px)
+	
+	.main__block
+		flex-direction: column
+
+	
+	

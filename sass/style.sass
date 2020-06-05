@@ -9,23 +9,172 @@
 .hero
 	background: url('../img/home-img.png') no-repeat
 	background-size: cover
+	height: 880px
+	background-position: top
 
 @media (min-width: 768px) and (max-width: 991px)
 	.hero
 		background-size: 250%
-		background-position: top
 
-@media (min-width: 567px) and (max-width: 767px)
+@media (min-width: 568px) and (max-width: 767px)
 	.hero
-		background-size: 400%
-		background-position: top	
+		background-size: 400%	
 
-@media (min-width: 300px) and (max-width: 568px)
+@media (min-width: 300px) and (max-width: 567px)
 	.hero
 		background-size: 550%
-		background-position: top	
 
 @import 'main'
+@import 'footer'
 
+.main__latest_img
+	background: url('../img/welcome.jpg')
+	background-repeat: no-repeat
+	-background-position: left
+	-background-size: cover
+	-height: 800px
 
+.main__latest_zero
+	width: 50%
+	height: auto
+
+.main__latest_block, .main__university_block
+	display: flex
+	flex-direction: row
+
+.main__latest_text
+	padding-top: 300px
+	margin-left: 400px
+
+.main__latest_text p, .main__university_text p
+	font-size: 17px
+	line-height: 27px
+	color: #8c8c8c
+	margin-top: 40px
+
+.main__university
+	margin-top: 50px
+
+	&_img
+		background: url('../img/latest.jpg')
+		background-repeat: no-repeat
+		background-position: top right
+		-height: 800px
+		margin-top: 30px
+
+.main__university_text
+	padding-top: 150px
+	margin-right: 450px
+
+.main__latest_text button.navbar__button
+	margin-top: 30px
+	margin-bottom: 50px
+
+.main__university_text button.navbar__button
+	margin-top: 30px
+	margin-bottom: 50px
+
+@media (min-width: 300px) and (max-width: 567px)
+	.main__latest_text, .main__university_text
+		padding-top: 350px
+		margin-top: 0px
+		margin-left: 10px
+		margin-right: 10px
+
+@media (min-width: 568px) and (max-width: 768px)
+	.main__latest_text, .main__university_text
+		padding-top: 550px
+		margin-left: 50px
+		margin-right: 50px
+
+@media (min-width: 300px) and (max-width: 767px)
+	.main__latest_block, .main__university_block
+		display: flex
+		flex-direction: column
+
+	.main__latest_img
+		background-size: 140%
+
+	.main__university_img
+		background-size: 90%
+
+	.main__latest_block h3, .main__university_block h3
+		font-size: 24px
+		text-align: center
+		padding-bottom: 40px
+
+	.main__latest_block p, .main__university_block p
+		font-size: 14px
+		text-align: center
 	
+	.main__latest_text p, .main__university_text p
+		margin-top: 0px
+		text-align: center
+
+@media (min-width: 768px) and (max-width: 1025px)
+	.main__latest_block, .main__university_block
+		display: flex
+		flex-direction: column
+
+	.main__latest_text, .main__university_text
+		padding-top: 1000px
+		margin-left: 50px
+		margin-right: 50px
+
+	.main__latest_img
+		background-size: 140%
+		background-position: left
+
+	.main__university_img
+		background-size: 90%
+		background-position: left
+
+	.main__latest_block h3, .main__university_block h3
+		font-size: 28px
+		text-align: center
+		padding-bottom: 40px
+
+	.main__latest_block p, .main__university_block p
+		font-size: 14px
+		
+	.main__latest_text p, .main__university_text p
+		margin-top: 0px
+
+@media (min-width: 1024px) and (max-width: 1500px)
+	.main__latest_img
+		background-size: 140%
+		margin-top: 0
+
+	.main__university_img
+		background-size: 90%
+		margin-top: 0
+		
+	.main__latest_text, .main__university_text
+		padding-top: 900px
+		margin-left: 50px
+		margin-right: 50px
+	
+	.main__latest_block p, .main__university_block p
+		text-align: center
+	
+	.main__latest_text p, .main__university_text p
+		text-align: center
+
+@media (min-width: 568px) and (max-width: 1500px)
+
+	.main__latest_text button.navbar__button
+		display: block
+		margin: 30px auto
+
+	.main__university_text button.navbar__button
+		display: block
+		margin: 30px auto
+
+@media (min-width: 300px) and (max-width: 567px)
+
+	.main__latest_text button.navbar__button
+		margin: 0px auto
+
+	.main__university_text button.navbar__button
+		margin: 0px auto
+

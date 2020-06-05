@@ -5,55 +5,218 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/lazy-line-painter-master/libs/lazylinepainter-1.9.4.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- Include lazylinepainter -->
+        <script src="js/lazy-line-painter/lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#housing');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
 </head>
 <body>
 	<div class="hero">
-	<header>
-		<div class="navbar">
-			<div class="container">
-				<div class="navbar-wrap">
-					<div class="navbar__logo">
-						<a href ="#" class="logo__link" href="#">
-							<img class="logo__img" src="img/logo.png">
-						</a>
-					</div>
-					<div class="navbar__menu">
-						<a href="#">Home</a>
-						<a href="#">Services</a>
-						<a href="#">Product</a>
-						<a href="#">Contact</a>
-					</div>
-					<button class="menu__button">
-						<span class="menu__button__line"></span>
-						<span class="menu__button__line"></span>
-						<span class="menu__button__line"></span>
-					</button>
-					<div class="menu-wrap">
-						<a href="#" class="menu__link">Home</a>
-						<a href="#" class="menu__link">Services</a>
-						<a href="#" class="menu__link">Product</a>
-						<a href="#" class="menu__link">Contact</a>
-					</div>
-					<button class="navbar__button">Sing in</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="main">
-			<div class="main__title">
+		<header>
+			<div class="navbar">
 				<div class="container">
-					<h1>Education for all</h1>
-					<p>A bank is a financial institution that accepts ceposits from the <br> public and creates credit. For all of you financial needs</p>
-					<button class="navbar__button">Read more</button>
+					<div class="navbar-wrap">
+						<div class="navbar__logo">
+							<a href ="#" class="logo__link" href="#">
+								<img class="logo__img" src="img/logo.png">
+							</a>
+						</div>
+						<div class="navbar__menu">
+							<a href="#"><svg version="1.1" id="housing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+<g>
+	<g>
+		<path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064&#10;&#9;&#9;&#9;c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57&#10;&#9;&#9;&#9;c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z" data-llp-id="housing-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="0" style=""/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52&#10;&#9;&#9;&#9;s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053&#10;&#9;&#9;&#9;c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89&#10;&#9;&#9;&#9;c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024&#10;&#9;&#9;&#9;c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847&#10;&#9;&#9;&#9;C455.549,238.499,449.593,232.543,442.246,232.543z" data-llp-id="housing-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="0" style=""/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></a>
+							<a href="#">Home</a>
+							<a href="#">Services</a>
+							<a href="#">Product</a>
+							<a href="#">Contact</a>
+						</div>
+						<button class="menu__button">
+							<span class="menu__button__line"></span>
+							<span class="menu__button__line"></span>
+							<span class="menu__button__line"></span>
+						</button>
+						<div class="menu-wrap">
+							<a href="#" class="menu__link">Home</a>
+							<a href="#" class="menu__link">Services</a>
+							<a href="#" class="menu__link">Product</a>
+							<a href="#" class="menu__link">Contact</a>
+						</div>
+						<button class="navbar__button">Sing in</button>
+					</div>
 				</div>
 			</div>
-			<div class="main__applyblue"></div>
+		</header>
+		<main>
+			<div class="main">
+				<div class="main__title">
+					<div class="container">
+						<h1>Education for all</h1>
+						<p class="main__title_text">A bank is a financial institution that accepts ceposits from the <br> public and creates credit. For all of you financial needs</p>
+						<button class="navbar__button">Read more</button>
+						<div class="main__block">
+							<div class="main__applyblue">
+								<div class="main__applyred">
+									<h4>Apply for admission</h4>
+									<p>Make it more simple</p>
+									<form>
+										<div class="form__input"><input type="text" placeholder="   Enter you email"></div>
+									</form>
+								</div>
+							</div>
+							<div class="main__block_text">
+								<p>"Before Coursecity, I was working two minimum wage jobs. Now, & new life!"I learned most of my programming skills and hrough self-study and the material available."</p>
+								<span>Stephanie Magion</span>
+								<div class="main__block_pagination">
+									<div class="pagination"></div>
+									<div class="pagination"></div>
+									<div class="pagination"></div>
+									<div class="pagination"></div>
+									<div class="pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				<div class="main__latest">
+					<div class="main__latest_img">
+						<div class= "container">
+							<div class="main__latest_block">
+								<div class="main__latest_zero"></div>
+								<div class="main__latest_text">
+									<h3>Welcome to Education university, Constant self-improvement  as an instructor.</h3>
+									<p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.</p>
+									<p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.</p>
+									<button class="navbar__button">Get started</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main__university">
+					<div class="main__university_img">
+						<div class= "container">
+							<div class="main__latest_block">
+								<div class="main__university_text">
+									<h3>Welcome to Education university, Constant self-improvement  as an instructor.</h3>
+									<p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.</p>
+									<p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.</p>
+									<button class="navbar__button">Get started</button>
+								</div>
+								<div class="main__latest_zero"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__middle">
+					<div class="container">
+						<div class="main__middle_block">
+							<div class="main__middle_item">
+								<div class="main__middle_circle"><img src="img/icon1.png"></div>
+								<h4>Global Student</h4>
+								<p>Education City is initiative of our Qatar Foundation for Education, Science Community Development.</p>
+							</div>
+							<div class="main__middle_item">
+								<div class="main__middle_circle"><img src="img/icon2.png"></div>
+								<h4>Success Rate</h4>
+								<p>Education City is initiative of our Qatar Foundation for Education, Science Community Development.</p>
+							</div>
+							<div class="main__middle_item">
+								<div class="main__middle_circle"><img src="img/icon3.png"></div>
+								<h4>Education Services</h4>
+								<p>Education City is initiative of our Qatar Foundation for Education, Science Community Development.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</main>
+		<footer>
+	<div class="container">
+		<div class="footer">
+			<div>
+				<a href="#">&copy 2019</a>
+				<a href="#">Roy Design.</a>
+				<a href="#">All Rights Reserved</a>
+			</div>
+			<div class="footer__menu">
+				<a href="#">About Company</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Help Center</a>
+				<a href="#">Terms</a>
+				<a href="#">Site map</a>
+			</div>
 		</div>
-
-
-	</main>
 	</div>
+</footer>
+	</div>
+
+
 <!--Подключение виджета обратной связи через Spikmi-->
 <script type="text/javascript" src="https://spikmi.com/Widget?Id=3102"></script>
 </body>
