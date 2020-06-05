@@ -1,0 +1,21 @@
+.footer
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	
+	div
+		margin-bottom: 50px
+
+	a
+		color: #c9c9c9
+		padding-right: 15px
+
+	&__menu a
+		padding-right: 20px
+
+a:last-child
+	padding-right: 0px
+
+@media (min-width: 300px) and (max-width: 1025px)
+	.footer
+		flex-direction: column
