@@ -21,13 +21,16 @@
 			line-height: 65px
 
 		a:nth-child(1)
-			padding: 0px 0px
+			padding: 0px 40px
 
 		a:nth-child(2)
 			padding: 25px 25px 25px 0px
 
 	&__logo
 		display: block
+
+		img
+			max-width: 100%
 
 	&__button
 		display: block
@@ -45,20 +48,6 @@
 	overflow: visible
 	margin-top: 20px
 	
-
-.menu	
-	&__button__line
-		display: block
-		width: 20px
-		height: 3px
-		background-color: #fff
-
-	&__button span
-		margin-top: 5px
-
-.menu__button
-	display: none
-
 .menu-wrap
 	display: none
 
@@ -70,6 +59,45 @@
 	.navbar__menu
 		display: none
 	
+	.menu__burger
+		display: none
+		width: 26px
+		height: 20px
+		position: relative
+		transition: all 0.3s ease 0s
+
+	.menu__burger span
+		position: absolute
+		display: block
+		background-color: #fff
+		left: 0
+		width: 100%
+		height: 2px
+		
+	.menu__burger:before
+		content: ''
+		display: block
+		position: absolute
+		background-color: #fff
+		width: 26px
+		height: 2px
+		transition: all 0.3s ease 0s
+
+	.menu__burger:after
+		content: ''
+		display: block
+		position: absolute
+		background-color: #fff
+		width: 26px
+		height: 2px
+		transition: all 0.3s ease 0s
+
+	.menu__burger:before
+		top: 7px
+
+	.menu__burger:after
+		top: -7px
+
 	.menu-wrap
 		display: flex
 		flex-direction: column
@@ -77,7 +105,7 @@
 		width: 100%
 		left: 0
 		margin: 0 auto
-		margin-top: 100px
+		top: -100%
 		justify-content: space-between
 		align-items: center
 
@@ -90,9 +118,24 @@
 			margin-bottom: 10px
 			margin-top: 40px
 	
-	.menu__button
+	.menu-wrap.active
+		top: 70px
+		transition: all 0.3s ease 0s
+
+	.menu__burger
 		display: block
 
+	.menu__burger.active span
+		transform: scale(0)
+
+	.menu__burger.active:before
+		transform: rotate(45deg)
+		top: 0px
+
+	.menu__burger.active:after
+		transform: rotate(-45deg)
+		top: 0px
+		
 	.navbar__button
 		width: 80px
 		height: 35px

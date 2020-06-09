@@ -1,4 +1,159 @@
-.navbar-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.navbar {
+  padding-top: 50px; }
+  .navbar-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    max-height: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 25%; }
+    .navbar__menu a {
+      padding: 20px 25px;
+      text-decoration: none;
+      color: #fff;
+      line-height: 65px; }
+    .navbar__menu a:nth-child(1) {
+      padding: 0px 0px; }
+    .navbar__menu a:nth-child(2) {
+      padding: 25px 25px 25px 0px; }
+  .navbar__logo {
+    display: block; }
+    .navbar__logo img {
+      max-width: 100%; }
+  .navbar__button {
+    display: block;
+    width: 120px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: #fc5657;
+    color: #fff;
+    font-size: 18px; }
+
+#housing {
+  width: 5vw;
+  height: 5vh;
+  position: relative;
+  overflow: visible;
+  margin-top: 20px; }
+
+.menu-wrap {
+  display: none; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar__menu {
+    margin-left: 5%; } }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .navbar__menu {
+    display: none; }
+  .menu__burger {
+    display: none;
+    width: 26px;
+    height: 20px;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .menu__burger span {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px; }
+  .menu__burger:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 26px;
+    height: 2px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .menu__burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 26px;
+    height: 2px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .menu__burger:before {
+    top: 7px; }
+  .menu__burger:after {
+    top: -7px; }
+  .menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    top: -100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .menu-wrap a {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      color: #fff; }
+    .menu-wrap a:nth-child(1) {
+      margin-bottom: 10px;
+      margin-top: 40px; }
+  .menu-wrap.active {
+    top: 70px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .menu__burger {
+    display: block; }
+  .menu__burger.active span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+  .menu__burger.active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px; }
+  .menu__burger.active:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0px; }
+  .navbar__button {
+    width: 80px;
+    height: 35px;
+    border-radius: 16px; }
+  .navbar__logo img {
+    width: 80px;
+    height: auto; } }
