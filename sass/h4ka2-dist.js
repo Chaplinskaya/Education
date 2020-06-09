@@ -1,0 +1,1 @@
+for(var input="javascript",output="",i=0;i<input.length;i++)(input[i]=j)&&(j="4");console.log("output");

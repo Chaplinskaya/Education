@@ -1,2 +1,57 @@
 * {
-  font-family: 'Open Sans Regular'; }
+  font-family: 'Open Sans Regular';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0; }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+button, input {
+  border: none; }
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  color: #fff;
+  font-family: Raleway bold;
+  padding-bottom: 40px; }
+
+h3 {
+  font-size: 36px;
+  font-family: Raleway Semibold; }
+
+h4 {
+  font-size: 25px;
+  font-family: Raleway Semibold;
+  padding-bottom: 30px;
+  color: #333333; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  font-size: 60px; }
+
+@media (min-width: 568px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px; } }
+
+@media (min-width: 300px) and (max-width: 567px) {
+  h1 {
+    font-size: 32px; }
+  p {
+    font-size: 17px;
+    color: #fff;
+    font-family: Open Sans Semibold; }
+  main p {
+    padding-bottom: 50px;
+    width: 100%; } }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  main p {
+    font-size: 14px;
+    text-align: center;
+    width: 95%; } }
