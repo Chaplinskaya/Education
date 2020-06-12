@@ -1,11 +1,14 @@
+@mixin main_wh($w, $h)
+	width: $w
+	height: $h
+
 main
 	margin-top: 270px
 	padding-bottom: 270px
 
 .main .navbar__button
 		display: block
-		width: 150px
-		height: 50px
+		@include main_wh(150px, 50px)
 		border-radius: 25px
 		background-color: #fc5657
 		color: #fff
@@ -19,21 +22,19 @@ p.main__title_text
 	font-family: Open Sans Semibold
 
 .main__applyblue
-	width: 400px
-	height: 266px
+	@include main_wh(400px, 266px)
 	background-color: #183251
-	border-radius: 10px
 	position: relative
 	z-index: 1000
+	border-radius: 10px
 		
 .main__applyred
-	width: 400px
-	height: 266px
+	@include main_wh(400px, 266px)
 	background-color: #ff5f60
-	border-radius: 10px
 	position: absolute
 	z-index: 2000
 	margin-top: 10px
+	border-radius: 10px
 
 	h4
 		color: #fff
@@ -61,16 +62,14 @@ p.main__title_text
 			position: relative
 		
 		input
-			width: 240px
-			height: 45px
+			@include main_wh(240px, 45px)
 			border-radius: 22px
 			background-color: #fff
 		
 		.form__input:after
 			content: ""
 			display: block
-			width: 60px
-			height: 45px
+			@include main_wh(60px, 45px)
 			background-color: #1f3148
 			border-radius: 0 22px 22px 0
 			float: right
@@ -83,8 +82,7 @@ p.main__title_text
 
 .main__latest button,
 .main__university  button
-	width: 140px
-	height: 45px
+	@include main_wh(140px, 45px)
 	border-radius: 22px
 
 .main__block
@@ -119,8 +117,7 @@ p.main__title_text
 		margin: 0 auto
 
 	.pagination
-		width: 10px
-		height: 10px
+		@include main_wh(10px, 10px)
 		border-radius: 5px
 		background-color: #fb8122
 		opacity: 0.5
@@ -154,8 +151,7 @@ p.main__title_text
 	margin-left: 40px
 	
 .main__middle_circle:nth-child(1)
-	width: 130px
-	height: 130px
+	@include main_wh(130px, 130px)
 	border-radius: 65px
 	margin: 0 auto
 	margin-bottom: 30px
@@ -192,12 +188,10 @@ p.main__title_text
 			padding-top: 50px
 
 		.main__applyblue
-			width: 300px
-			height: 166px
+			@include main_wh(300px, 166px)
 
 		.main__applyred
-			width: 300px
-			height: 166px
+			@include main_wh(300px, 166px)
 
 		h4
 			font-size: 20px
@@ -227,6 +221,4 @@ p.main__title_text
 	
 	.main__block
 		flex-direction: column
-
-	
 	

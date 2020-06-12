@@ -329,18 +329,18 @@ p.main__title_text {
   width: 400px;
   height: 266px;
   background-color: #183251;
-  border-radius: 10px;
   position: relative;
-  z-index: 1000; }
+  z-index: 1000;
+  border-radius: 10px; }
 
 .main__applyred {
   width: 400px;
   height: 266px;
   background-color: #ff5f60;
-  border-radius: 10px;
   position: absolute;
   z-index: 2000;
-  margin-top: 10px; }
+  margin-top: 10px;
+  border-radius: 10px; }
   .main__applyred h4 {
     color: #fff;
     text-align: center;
@@ -581,12 +581,11 @@ a:last-child {
 .main__latest_text {
   padding-top: 300px;
   margin-left: 400px; }
-
-.main__latest_text p, .main__university_text p {
-  font-size: 17px;
-  line-height: 27px;
-  color: #8c8c8c;
-  margin-top: 40px; }
+  .main__latest_text p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #8c8c8c;
+    margin-top: 40px; }
 
 .main__university {
   margin-top: 50px; }
@@ -594,12 +593,15 @@ a:last-child {
     background: url("../img/latest.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    -height: 800px;
     margin-top: 30px; }
-
-.main__university_text {
-  padding-top: 150px;
-  margin-right: 450px; }
+  .main__university_text {
+    padding-top: 150px;
+    margin-right: 450px; }
+    .main__university_text p {
+      font-size: 17px;
+      line-height: 27px;
+      color: #8c8c8c;
+      margin-top: 40px; }
 
 .main__latest_text button.navbar__button {
   margin-top: 30px;
@@ -640,8 +642,13 @@ a:last-child {
     text-align: center;
     padding-bottom: 40px; }
   .main__latest_block p, .main__university_block p {
-    font-size: 14px;
-    text-align: center; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .main__latest_text p, .main__university_text p {
     margin-top: 0px;
     text-align: center; } }
@@ -666,7 +673,7 @@ a:last-child {
     background-size: 90%;
     background-position: left; }
   .main__latest_block h3, .main__university_block h3 {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     padding-bottom: 40px; }
   .main__latest_block p, .main__university_block p {
