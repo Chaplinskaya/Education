@@ -1,1 +1,1 @@
-# Landing page example using HTML, CSS, JAVASCRIPT, SASS, PREPROS
+# Landing page example using HTML, CSS, Javascript, SASS, Prepros
