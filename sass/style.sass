@@ -27,37 +27,6 @@
 @import 'main'
 @import 'footer'
 
-@mixin main_lb_h3
-	font-size: 24px
-	text-align: center
-	padding-bottom: 40px
-
-@mixin flex_col
-	display: flex
-	flex-direction: column
-
-@mixin flex_row
-	display: flex
-	flex-direction: row
-
-@mixin main_text
-	padding-top: 350px
-	margin-top: 0px
-	margin-left: 10px
-	margin-right: 10px
-
-@mixin main_button
-	margin-top: 30px
-	margin-bottom: 50px
-
-@mixin left_right
-	margin-left: 50px
-	margin-right: 50px
-
-@mixin main_nav
-	display: block
-	margin: 30px auto
-
 .main__latest_img
 	background: url('../img/welcome.jpg')
 	background-repeat: no-repeat
@@ -67,17 +36,18 @@
 	height: auto
 
 .main__latest_block, .main__university_block
-	@include flex_row
+	display: flex
+	flex-direction: row
 
 .main__latest_text
 	padding-top: 300px
 	margin-left: 400px
-	
-	p
-		font-size: 17px
-		line-height: 27px
-		color: #8c8c8c
-		margin-top: 40px
+
+.main__latest_text p, .main__university_text p
+	font-size: 17px
+	line-height: 27px
+	color: #8c8c8c
+	margin-top: 40px
 
 .main__university
 	margin-top: 50px
@@ -86,23 +56,20 @@
 		background: url('../img/latest.jpg')
 		background-repeat: no-repeat
 		background-position: top right
+		-height: 800px
 		margin-top: 30px
 
-	&_text
-		padding-top: 150px
-		margin-right: 450px
-		
-		p
-			font-size: 17px
-			line-height: 27px
-			color: #8c8c8c
-			margin-top: 40px
+.main__university_text
+	padding-top: 150px
+	margin-right: 450px
 
 .main__latest_text button.navbar__button
-	@include main_button
+	margin-top: 30px
+	margin-bottom: 50px
 
 .main__university_text button.navbar__button
-	@include main_button
+	margin-top: 30px
+	margin-bottom: 50px
 
 @media (min-width: 300px) and (max-width: 567px)
 	.main__latest_text, .main__university_text
@@ -114,11 +81,13 @@
 @media (min-width: 568px) and (max-width: 768px)
 	.main__latest_text, .main__university_text
 		padding-top: 550px
-		@include left_right
+		margin-left: 50px
+		margin-right: 50px
 
 @media (min-width: 300px) and (max-width: 767px)
 	.main__latest_block, .main__university_block
-		@include flex_col
+		display: flex
+		flex-direction: column
 
 	.main__latest_img
 		background-size: 140%
@@ -127,10 +96,13 @@
 		background-size: 90%
 
 	.main__latest_block h3, .main__university_block h3
-		@include main_lb_h3
+		font-size: 24px
+		text-align: center
+		padding-bottom: 40px
 
 	.main__latest_block p, .main__university_block p
-		@include flex_col
+		font-size: 14px
+		text-align: center
 	
 	.main__latest_text p, .main__university_text p
 		margin-top: 0px
@@ -138,11 +110,13 @@
 
 @media (min-width: 768px) and (max-width: 1025px)
 	.main__latest_block, .main__university_block
-		@include flex_col
+		display: flex
+		flex-direction: column
 
 	.main__latest_text, .main__university_text
 		padding-top: 1000px
-		@include left_right
+		margin-left: 50px
+		margin-right: 50px
 
 	.main__latest_img
 		background-size: 140%
@@ -153,7 +127,9 @@
 		background-position: left
 
 	.main__latest_block h3, .main__university_block h3
-		@include main_lb_h3
+		font-size: 28px
+		text-align: center
+		padding-bottom: 40px
 
 	.main__latest_block p, .main__university_block p
 		font-size: 14px
@@ -172,7 +148,8 @@
 		
 	.main__latest_text, .main__university_text
 		padding-top: 900px
-		@include left_right
+		margin-left: 50px
+		margin-right: 50px
 	
 	.main__latest_block p, .main__university_block p
 		text-align: center
@@ -183,10 +160,12 @@
 @media (min-width: 568px) and (max-width: 1500px)
 
 	.main__latest_text button.navbar__button
-		@include main_nav
+		display: block
+		margin: 30px auto
 
 	.main__university_text button.navbar__button
-		@include main_nav
+		display: block
+		margin: 30px auto
 
 @media (min-width: 300px) and (max-width: 567px)
 
@@ -195,3 +174,4 @@
 
 	.main__university_text button.navbar__button
 		margin: 0px auto
+
